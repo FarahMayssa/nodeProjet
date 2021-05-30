@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <!-- header-->
+        <div class="header">
+			<div class="header-left">
+				<a href="#" class="logo">
+					<span>ISAMM PFE</span>
+				</a>
+			</div>
+            
+            <div class="dropdown mobile-user-menu float-right">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="profile.html">My Profile</a>
+                    <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
+                    <a class="dropdown-item" href="settings.html">Settings</a>
+                    <a class="dropdown-item" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">Main</li>
+                        <li>
+                            <a href="#"> <span>Année universitaire</span></a>
+                        </li>
+						<li>
+                            <a href="#"> <span>Enseignants</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="#"> <span>Etudiants</span></a>
+                        </li>
+                        <li>
+                            <a href="#"> <span>PFE</span></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="row">
+                    <div class="col-sm-4 col-3">
+                        <h4 class="page-title">Etudiants</h4>
+                    </div>
+                    <div class="col-sm-8 col-9 text-right m-b-20">
+                        <a href="/addEtu" class="btn btn btn-primary btn-rounded float-right"> Ajouter Etudiant</a>
+                    </div>
+                </div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="table-responsive">
+							<table class="table table-border table-striped custom-table datatable mb-0">
+								<thead>
+									<tr>
+										<th>Nom et prenom</th>
+										<th>Address</th>
+										<th>Phone</th>
+										<th>Email</th>
+										<th class="text-right">Action</th>
+									</tr>
+								</thead>
+								<tbody>
+                                    
+									<tr>
+										<td><img width="28" height="28" src="public\img\user.jpg" class="rounded-circle m-r-5" alt=""><a href="/profil_etudiant"> Etudiant 1 </a></td>
+										<td></td>
+										<td></td>
+										<td></td>
+										<td class="text-right">
+											<div>
+                                                <a href="/edit_etudiant"><img width="15" height="15" src="/img/pencil.png" alt="editer"/></a>
+                                                <span><a href="#delete_patient"><img width="15" height="15" src="/img/trash.png" alt="Supprimer"/></a></span>
+                                                <span><a href="#"><img width="15" height="15" src="/img/bannir.png" alt="bannir"/></a></span>
+											</div>
+										</td>
+									</tr>
+                                    
+								</tbody>
+							</table>
+						</div>
+					</div>
+                </div>
+            </div>
+            
+        </div>
+		<div id="delete_patient" class="modal fade delete-modal" role="dialog">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body text-center">
+						<img src="assets/img/sent.png" alt="" width="50" height="46">
+						<h3>Are you sure want to delete this Patient?</h3>
+						<div class="m-t-20"> <a href="#" class="btn btn-white" data-dismiss="modal">Close</a>
+							<button type="submit" class="btn btn-danger">Delete</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+    </div>
+   
+</body>
+
+
+<!-- patients23:19-->
+</html>

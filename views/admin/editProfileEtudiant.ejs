@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <!-- header-->
+        <div class="header">
+			<div class="header-left">
+				<a href="#" class="logo">
+					<span>ISAMM PFE</span>
+				</a>
+			</div>
+            
+        </div>
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="menu-title">Main</li>
+                        <li>
+                            <a href="#"> <span>Année universitaire</span></a>
+                        </li>
+						<li>
+                            <a href="#"> <span>Enseignants</span></a>
+                        </li>
+                        <li class="active">
+                            <a href="#"> <span>Etudiants</span></a>
+                        </li>
+                        <li>
+                            <a href="#"> <span>PFE</span></a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h4 class="page-title">Modifier profil Etudiant </h4>
+                    </div>
+                </div>
+                <form>
+                    <div class="card-box">
+                        <h3 class="card-title">Basic Informations</h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="profile-img-wrap">
+                                    <img class="inline-block" src="assets/img/user.jpg" alt="user">
+                                    <div class="fileupload btn">
+                                        <span class="btn-text">modifier</span>
+                                        <input class="upload" type="file">
+                                    </div>
+                                </div>
+                                <div class="profile-basic">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group form-focus">
+                                                <label class="focus-label">Nom et prenom</label>
+                                                <input type="text" class="form-control floating" value="John">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-md-6">
+                                            <div class="form-group form-focus">
+                                                <label class="focus-label">Date de naissance</label>
+                                                <div class="cal-icon">
+                                                    <input class="form-control floating datetimepicker" type="text" value="05/06/1985">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-box">
+                        <h3 class="card-title">Coordonnées</h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group form-focus">
+                                    <label class="focus-label">Addresse</label>
+                                    <input type="text" class="form-control floating" value="4487 Snowbird Lane">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="form-group form-focus">
+                                    <label class="focus-label">Numéro</label>
+                                    <input type="text" class="form-control floating" value="631-889-3206">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center m-t-20">
+                        <button class="btn btn-primary submit-btn" type="button">Enregistrer</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+
+
+
+</html>
