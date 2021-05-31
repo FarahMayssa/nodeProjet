@@ -17,8 +17,9 @@ exports.create = (req, res) => {
 
   const enseignant = new enseignants({
     name: req.body.name,
-    phone: req.body.phone,
     email: req.body.email,
+    phone: req.body.phone,
+    dept: req.body.dept,
     
     
   });

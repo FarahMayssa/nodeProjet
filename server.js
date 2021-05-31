@@ -38,7 +38,8 @@ connectDB()
 
 //parse request to body-parser
 
-app.use(bodyparser.urlencoded({ extended: true }));
+app.use(express.urlencoded({extended: true}));
+app.use(express.json())
 
 //set view engine
 app.set("view engine", "ejs");
@@ -57,6 +58,9 @@ app.use('/',require('./server/routes/EtudiantsRoutes'))
 app.use('/',require('./server/routes/EnseignantsRoutes'))
 app.use('/',require('./server/routes/PfeRoutes'))
 app.use('/',require('./server/routes/AnneesRoutes'))
+app.use('/',require('./server/routes/UserRoutes'))
+app.use('/',require('./server/routes/PfeDemRoutes'))
+
 
 
 app.listen(PORT, () => {

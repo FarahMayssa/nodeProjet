@@ -14,9 +14,11 @@ exports.create = (req, res) => {
 
   const etudiant = new etudiants({
     name: req.body.name,
-    phone: req.body.phone,
     email: req.body.email,
+    CE: req.body.CE,
+    phone: req.body.phone,
     classe: req.body.classe,
+    supervisor: req.body.supervisor
   });
 
   //save etudiant in database

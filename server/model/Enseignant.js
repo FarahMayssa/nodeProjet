@@ -8,14 +8,21 @@ const EnseignantsSchema = new Schema({
         type: String,
         required:true 
     },
-    phone :{
-        type: Number
-    },
+   
     email :{
         type: String,
         required:true,
         unique:true
-    }
+    },
+    phone :{
+        type: Number,
+        unique:true
+    },
+    dept :{
+        type: String,
+        
+    },
+    
 })
 const enseignant =  mongoose.model('enseignant', EnseignantsSchema );
 module.exports = enseignant
