@@ -8,25 +8,24 @@ const PfeSchema = new Schema({
         type: String,
         required:true 
     },
+    etudiant :{
+        type: String,
+        
+       
+    },
     encadrant :{
         type: String
     },
-    description :{
+   
+    date_accep :{
         type: String,
-        required:true,
-       
+
     },
     cahier:{
         type: String
     },
-    date_accep :{
-        type: Date,
-
-    },
-    der_delai :{
-        type: Date,
-        
-    }
+ 
+  
 })
 const pfe =  mongoose.model('pfe', PfeSchema);
 module.exports = pfe

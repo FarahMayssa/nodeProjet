@@ -14,11 +14,12 @@ exports.create = (req, res) => {
 
   const pfe = new pfes({
     titre: req.body.titre,
+    etudiant: req.body.etudiant,
     encadrant: req.body.encadrant,
-    description: req.body.description,
-    cahier: req.body.cahier,
     date_accep: req.body.date_accep,
-    der_delai: req.body.der_delai,
+    cahier: req.body.cahier,
+    
+    
   });
 
   //save pfe in database
