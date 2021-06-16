@@ -17,6 +17,9 @@ exports.create = (req, res) => {
 
   const annee = new annees({
     createAt: req.body.createAt,
+    debut: req.body.debut,
+    fin:req.body.fin,
+    deadline: req.body.deadline
   
     
   });

@@ -6,7 +6,19 @@ const AnneeSchema = new Schema({
     
     createAt :{
         type: Date,
-        required:true 
+        
+    },
+    debut :{
+        type: Date,
+        
+    },
+    fin :{
+        type: Date,
+         
+    },
+    deadline:{
+        type: Date,
+        
     }
 })
 const annee =  mongoose.model('annee', AnneeSchema);
