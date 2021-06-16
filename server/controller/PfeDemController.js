@@ -54,6 +54,20 @@ exports.find = (req, res) => {
  
 };
 
+exports.findName = (req, res) => {
+  const name =req.params.name;
+  pfes_demande.find({supervisor:name})
+.then((pfe_demande) => {
+  res.send(pfe_demande);
+})
+.catch((err) => {
+  res.status(500)
+    .send({ message: err.message || "Error when retrieving pfe_demande.." });
+});
+
+};
+
+
 exports.findId = (req,res)=>{
   
     const id =req.params.id;

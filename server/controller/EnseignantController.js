@@ -75,6 +75,18 @@ exports.findId = (req,res)=>{
  
  
 }
+exports.findName = (req, res) => {
+  const name =req.params.name;
+  enseignants.find({name:name})
+.then((enseignant) => {
+  res.send(enseignant);
+})
+.catch((err) => {
+  res.status(500)
+    .send({ message: err.message || "Error when retrieving enseignant.." });
+});
+
+};
 
 
 

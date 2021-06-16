@@ -31,6 +31,7 @@ route.get("/prof", (req, res) => {
 route.post('/api/enseignants',EnseignantController.create)
 route.get('/api/enseignants',EnseignantController.find)
 route.get('/api/enseignants/:id',EnseignantController.findId)
+route.get('/api/enseignant/:name',EnseignantController.findName)
 route.put('/api/enseignants/:id',EnseignantController.update)
 route.delete('/api/enseignants/:id',EnseignantController.delete)
 
